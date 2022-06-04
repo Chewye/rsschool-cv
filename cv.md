@@ -24,3 +24,9 @@ def make_readable(seconds):
             times[i * 2] = '0' + str(secon[i])
     return ''.join(times)
 '''
+<h3>Education:</h3>
+*   [Nosov Magnitogorsk State Technical University](https://www.magtu.ru/)
+*   [Stepik - course for learning Python](https://stepik.org/course/68343/syllabus)
+*   [Deep Learning School](https://www.dlschool.org/)
+<h3>Languages:</h3>
+English - Elementary (A2)
