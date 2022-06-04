@@ -13,7 +13,7 @@ I work at a metallurgical plant as an engineer. Since the beginning of 2022, I s
 *   Microsoft office 
 *   VBA, VBS
 <h3>Code Example:</h3>
-'''python
+```python
 def make_readable(seconds):
     secon = [seconds // 3600, seconds % 3600 // 60, seconds % 60]
     times = ['00', ':', '00', ':', '00']
@@ -23,7 +23,7 @@ def make_readable(seconds):
         elif 0 != secon[i] < 10:
             times[i * 2] = '0' + str(secon[i])
     return ''.join(times)
-'''
+```
 <h3>Education:</h3>
 *   [Nosov Magnitogorsk State Technical University](https://www.magtu.ru/)
 *   [Stepik - course for learning Python](https://stepik.org/course/68343/syllabus)
