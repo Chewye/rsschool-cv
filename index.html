@@ -7,45 +7,96 @@
     <title>Curriculum vitae</title>
     <link href="/style/style.css" rel="stylesheet">
 </head>
-<body class="global_style">
-    <header>
+<body>
+    <header class="head-foot">
         <nav>
             <ul class="navigation_list">
-                <li>123</li>
-                <li>123</li>
-                <li>123</li>
+                <li class="nav_elem">
+                    <a href="#Contacts" class="nav-link">Contacts</a>
+                </li>
+                <li class="nav_elem">
+                    <a href="#About Me">About Me</a>
+                </li>
+                <li class="nav_elem">
+                    <a href="#Skills">Skills</a>
+                </li>
+                <li class="nav_elem">
+                    <a href="#Code Example">Code Example</a>
+                </li>
+                <li class="nav_elem">
+                    <a href="#Education">Education</a>
+                </li>
+                <li class="nav_elem">
+                    <a href="#Languages">Languages</a>
+                </li>               
             </ul>
-        </nav>
-        <h1 class="header center">Front-End junior developer</h1>
+        </nav>        
     </header>
-    <main>
+    <main class="main_style">
+        <h1 class="header center">Aleksandr Chuprin</h1>
+        <p><img src="images/content/Chewye.png" alt="Aleksandr Chuprin" class="right_img"></p>
         <div class="main_div">
             <h2></h2>
             <ul>
                 <li>
-                    <h2 class="header">Contacts</h2>
+                    <h2 class="header"><article id="Contacts">Contacts</article></h2>
+                    <p>Location: Russia, Magnitogorsk</p>
+                    <p>Discord: Chewye#8842</p>
+                    <p>Email: werfa13q@gmail.com</p>                    
                 </li>
                 <li>
-                    <h2 class="header">About Me</h2>
+                    <h2 class="header"><article id="About Me">About Me</article></h2>
+                    <p>I work at a metallurgical plant as an engineer. Since the beginning of 2022, I started programming. 
+                        I hope that this course will help me to change the field of work and my life.</p>
                 </li>
                 <li>
-                    <h2 class="header">Skills</h2>
+                    <h2 class="header"><article id="Skills">Skills</article></h2>
+                    <p>Python: numpy, pandas, sklearn, catboost, seaborn, pytorch</p>
+                    <p>HTML, CSS: Basic</p>
+                    <p>Windows, Linux</p>
+                    <p>Microsoft office </p>
+                    <p>VBA, VBS</p>                    
                 </li>
                 <li>
-                    <h2 class="header">Code Example</h2>
+                    <h2 class="header"><article id="Code Example">Code Example</article></h2>
+                    <pre class="border">
+                        <code>
+def make_readable(seconds): <br>
+    secon = [seconds // 3600, seconds % 3600 // 60, seconds % 60] <br>
+    times = ['00', ':', '00', ':', '00'] <br>
+    for i in range(3): <br>
+        if secon[i] > 9: <br>
+            times[i * 2] = str(secon[i]) <br>
+        elif 0 != secon[i] < 10: <br>
+            times[i * 2] = '0' + str(secon[i]) <br>
+    return ''.join(times)
+                        </code>
+                    </pre>
                 </li>
                 <li>
-                    <h2 class="header">Education</h2>
+                    <h2 class="header"><article id="Education">Education</article></h2>
+                    <p><a href="https://www.magtu.ru/" style="color: white">Nosov Magnitogorsk State Technical University</a></p>
+                    <p><a href="https://stepik.org/course/68343/syllabus" style="color: white">Stepik - course for learning Python</a></p>
+                    <p><a href="https://www.dlschool.org/" style="color: white">Deep Learning School</a></p>
                 </li>
                 <li>
-                    <h2 class="header">Languages</h2>
+                    <h2 class="header"><article id="Languages">Languages</article></h2>
+                    English - Elementary (A2)
                 </li>
             </ul>
         </div>
     </main>
 
-    <footer>
-
+    <footer class="footer head-foot">
+        <div class="foot_flex">
+            <div>
+                <p><a href="https://github.com/Chewye">Github</a></p>
+                <p>2022</p>
+            </div>
+            <div>
+                <p><a href="https://rs.school/js/"><img src="images/content/rs_school_js.svg" width="120" alt="RSSCHOOL-JS"></a></p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
